@@ -73,6 +73,10 @@ Las principales funcionalidades que incluye son:
     - _Usuario GitHub_: [MateoReynosoM](https://github.com/MateoReynosoM)
     - _Mail_: mateoreynoso2009@gmail.com
     - _DNI_: 43881462
+- **RODRIGUEZ SAQUILAN, MIGUEL**
+    - _Usuario GitHub_: [Miguelrs77](https://github.com/miguelrs77)
+    - _Mail_: miguelr.s77@gmail.com
+    - _DNI_: 18889456 
 
 
 ## Estructura de Carpetas del Proyecto
