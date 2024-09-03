@@ -69,3 +69,23 @@ Las principales funcionalidades que incluye son:
     - _Usuario GitHub_: [maiamajzum](https://github.com/maiamajzum)
     - _Mail_: maiamjzum@gmail.com
     - _DNI_: 34889057
+
+
+## Estructura de Carpetas del Proyecto
+
+```
+InstaTURNO--Grupo3--DS-IA/
+├── EVIDENCIA 1
+|   ├── 
+|   |     ├── 
+|   |     └── 
+|   ├── 
+|   |     └── 
+|   ├── 
+|   |     └── 
+|   └── 
+├── README
+
+```
+
+### Descripcion archivos del repositorio:
