@@ -69,7 +69,7 @@ Las principales funcionalidades que incluye son:
     - _Usuario GitHub_: [maiamajzum](https://github.com/maiamajzum)
     - _Mail_: maiamjzum@gmail.com
     - _DNI_: 34889057
-- **REYNOSO MARIN, MATEO**
+- **REYNOSO MARTIN, MATEO**
     - _Usuario GitHub_: [MateoReynosoM](https://github.com/MateoReynosoM)
     - _Mail_: mateoreynoso2009@gmail.com
     - _DNI_: 43881462
@@ -84,10 +84,11 @@ Las principales funcionalidades que incluye son:
 ```
 InstaTURNO--Grupo3--DS-IA/
 ├── EVIDENCIA 1
-|   ├── 
-|   |     ├── 
-|   |     └── 
-|   ├── 
+|   ├── BASE DE DATOS
+|   |     ├── Analisis
+|   |     ├── DIAGRAMA_CROW_FOOT.png
+|   |     └── TABLAS
+|   ├── APLICACION
 |   |     └── 
 |   ├── 
 |   |     └── 
