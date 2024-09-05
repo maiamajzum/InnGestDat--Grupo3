@@ -1,1 +1,26 @@
+#Impacto de InstaTURNO
+
+El sistema InstaTURNO tiene un gran potencial de impacto en el ámbito de la salud, tanto para los pacientes como para los profesionales. 
+Ya que facilitar la gestión de turnos médicos puede mejorar significativamente la experiencia de los usuarios al 
+reducir tiempos de espera, evitar problemas de disponibilidad y simplificar el proceso de reserva. 
+Esto, a su vez, puede mejorar la calidad de vida de las personas al garantizar un acceso más rápido y eficiente a los servicios de salud.
+InstaTURNO representa una herramienta que puede optimizar la administración de consultas, permitiendo una mejor organización 
+de los recursos y horarios. 
+Al centralizar la gestión de turnos, especialidades, y departamentos, el sistema también podría reducir la carga administrativa 
+y evitar errores o sobreturnos. Además, la inclusión de funcionalidades como la gestión de roles y usuarios 
+brinda un control seguro y personalizado para cada tipo de usuario, lo que incrementa la eficiencia y seguridad del sistema.
+________________________________________
+
+#Viabilidad de InstaTURNO
+
+La viabilidad de InstaTURNO depende en gran medida de una adecuada planificación en cuanto a los recursos tecnológicos y humanos. 
+El desarrollo inicial del sistema puede realizarse de manera viable gracias al uso de tecnologías de código abierto y 
+plataformas de desarrollo web gratuitas o de bajo costo. 
+Sin embargo, la implementación en un entorno productivo real podría requerir inversiones adicionales en infraestructura
+(servidores, almacenamiento de datos) y medidas de seguridad 
+(como el cifrado de datos y la protección de información sensible de los pacientes).
+La viabilidad y funcionalidad del proyecto radica en la optimización de las consultas y en la capacidad del sistema para escalar 
+conforme crezca el número de usuarios y departamentos. Esto se puede lograr integrando tecnologías 
+modernas que permitan mejorar la experiencia del usuario y mantener un rendimiento óptimo.
+Por lo que InstaTURNO es un proyecto con gran viabilidad técnica y potencial de impacto positivo en el sistema de salud.
 
