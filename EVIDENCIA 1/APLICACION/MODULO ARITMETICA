@@ -1,1 +1,72 @@
+def sumar(a: float, b: float) -> float:
+    """
+    Suma dos números reales (float).
+    Retorna la suma formateada a dos decimales.
+    """
+    try:
+        resultado = round(a + b, 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Ambos valores deben ser números reales.")
 
+def restar(a: float, b: float) -> float:
+    """
+    Resta dos números reales (float).
+    Retorna la resta del primer número menos el segundo, formateada a dos decimales.
+    """
+    try:
+        resultado = round(a - b, 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Ambos valores deben ser números reales.")
+
+def dividir(a: float, b: float) -> float:
+    """
+    Divide dos números reales (float).
+    Retorna la división del primer número entre el segundo formateada a dos decimales.
+    Maneja el caso de división por cero con una excepción.
+    """
+    try:
+        if b == 0:
+            raise ZeroDivisionError("No se puede dividir por cero.")
+        resultado = round(a / b, 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Ambos valores deben ser números reales.")
+
+def multiplicar(a: float, b: float) -> float:
+    """
+    Multiplica dos números reales (float).
+    Retorna el producto formateado a dos decimales.
+    """
+    try:
+        resultado = round(a * b, 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Ambos valores deben ser números reales.")
+
+def sumar_n(*args: float) -> float:
+    """
+    Suma una cantidad variable de números reales (float).
+    Retorna la suma total formateada a dos decimales.
+    """
+    if not args:
+        raise ValueError("Debe proporcionar al menos un número.")
+    try:
+        resultado = round(sum(args), 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Todos los valores deben ser números reales.")
+
+def promedio_n(*args: float) -> float:
+    """
+    Calcula el promedio de una cantidad variable de números reales (float).
+    Retorna el promedio formateado a dos decimales.
+    """
+    if not args:
+        raise ValueError("Debe proporcionar al menos un número.")
+    try:
+        resultado = round(sum(args) / len(args), 2)
+        return resultado
+    except TypeError:
+        raise ValueError("Todos los valores deben ser números reales.")
