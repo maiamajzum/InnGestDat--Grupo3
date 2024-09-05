@@ -74,7 +74,7 @@ def promedio_n(*args: float) -> float:
 
 def menu():
     while True:
-        print("Menú de Opciones:")
+        print("\nMenú de Opciones:")
         print("1. Sumar dos números")
         print("2. Restar dos números")
         print("3. Dividir dos números")
@@ -111,7 +111,9 @@ def menu():
 
         elif opcion in ['5', '6']:
             try:
-                numeros = list(map(float, input("Ingrese los números separados por espacio: ").split()))
+                entrada = input("Ingrese los números separados por espacio: ")
+                numeros = entrada.split()
+                numeros = [float(num) for num in numeros]  # Conversión sin map
             except ValueError:
                 print("Por favor, ingrese números válidos.")
                 continue
