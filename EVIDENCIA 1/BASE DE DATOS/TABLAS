@@ -1,16 +1,21 @@
-PACIENTE:
+TABLAS:
 
-TURNO:
+PACIENTE: En esta tabla se almacenan los datos personales de los pacientes, como su nombre, apellido y DNI.
 
-MEDICO:
+MEDICO: Esta tabla guarda la información de los médicos, incluyendo su nombre, apellido y el horario en el que trabajan.
 
-DEPARTAMENTO:
+HORARIO: Aquí se registran los horarios de los médicos, especificando la hora de inicio y la hora de fin de sus turnos.
 
-ESPECIALIDAD:
+MEDICO_HAS_ESPECIALIDAD: Esta tabla se utiliza para relacionar a los médicos con sus especialidades, 
+ya que un médico puede tener más de una especialidad.
 
-MEDICO_HAS_ESPECIALIDAD:
+ESPECIALIDAD: En esta tabla se guardan las diferentes especialidades médicas disponibles, junto con el departamento al que pertenecen.
 
-HORARIO:
+DEPARTAMENTO: Aquí se almacenan los departamentos a los que están asignadas las distintas especialidades médicas.
 
+TURNO: En esta tabla se gestionan los turnos de los pacientes, registrando la fecha y hora del turno, 
+el paciente que lo solicitó y la especialidad médica relacionada.
+
+Este diseño facilita la organización de los turnos médicos, asignando médicos y especialidades a los pacientes según sus necesidades.
 
 
