@@ -7,7 +7,7 @@ def sumar(a: float, b: float) -> float:
         resultado = round(a + b, 2)
         return resultado
     except TypeError:
-        raise ValueError("Ambos valores deben ser números reales.")
+        print("Ambos valores deben ser números reales.")
 
 def restar(a: float, b: float) -> float:
     """
@@ -18,7 +18,7 @@ def restar(a: float, b: float) -> float:
         resultado = round(a - b, 2)
         return resultado
     except TypeError:
-        raise ValueError("Ambos valores deben ser números reales.")
+        print("Ambos valores deben ser números reales.")
 
 def dividir(a: float, b: float) -> float:
     """
@@ -32,7 +32,7 @@ def dividir(a: float, b: float) -> float:
         resultado = round(a / b, 2)
         return resultado
     except TypeError:
-        raise ValueError("Ambos valores deben ser números reales.")
+        print("Ambos valores deben ser números reales.")
 
 def multiplicar(a: float, b: float) -> float:
     """
@@ -43,7 +43,7 @@ def multiplicar(a: float, b: float) -> float:
         resultado = round(a * b, 2)
         return resultado
     except TypeError:
-        raise ValueError("Ambos valores deben ser números reales.")
+        print("Ambos valores deben ser números reales.")
 
 def sumar_n(*args: float) -> float:
     """
@@ -51,12 +51,12 @@ def sumar_n(*args: float) -> float:
     Retorna la suma total formateada a dos decimales.
     """
     if not args:
-        raise ValueError("Debe proporcionar al menos un número.")
+        print("Debe proporcionar al menos un número.")
     try:
         resultado = round(sum(args), 2)
         return resultado
     except TypeError:
-        raise ValueError("Todos los valores deben ser números reales.")
+        print("Todos los valores deben ser números reales.")
 
 def promedio_n(*args: float) -> float:
     """
@@ -64,9 +64,9 @@ def promedio_n(*args: float) -> float:
     Retorna el promedio formateado a dos decimales.
     """
     if not args:
-        raise ValueError("Debe proporcionar al menos un número.")
+        print("Debe proporcionar al menos un número.")
     try:
         resultado = round(sum(args) / len(args), 2)
         return resultado
     except TypeError:
-        raise ValueError("Todos los valores deben ser números reales.")
+        print("Todos los valores deben ser números reales.")
