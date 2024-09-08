@@ -118,7 +118,7 @@ EVIDENCIA 1
 
 - **Modulo Artitmetica**
     - Modulo de operaciones aritmeticas (sumar, restar, dividir, multiplicar, sumar_n cantidad de números y sacr promedio de n cantidad 
-      de números.
+      de números).
 
 - **Registrar usuario**
     - Modulo para registro de nuevos usuarios.
