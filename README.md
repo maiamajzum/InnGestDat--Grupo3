@@ -101,7 +101,7 @@ EVIDENCIA 1
 |   |     ├── DIAGRAMA ER.png
 |   |     ├── Insta-DB2.jpeg
 |   |     └── TABLAS
-|   └── Evidencia_1_10.01v (ignorar)
+|   └── Evidencia_1_10.01v 
 └── README
 
 ```
@@ -186,4 +186,4 @@ EVIDENCIA 1
        - d. relevancia del proyecto en el contexto académico o profesional.       
        
 - **Evidencia_1_0.01v**
-    - Carpeta con integraciones del proyecto para revisión futura, ignorar.
+    - 
