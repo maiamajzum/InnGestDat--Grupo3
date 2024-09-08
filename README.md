@@ -111,10 +111,10 @@ EVIDENCIA 1
 > #### **APLICACION**: _Este directorio contiene todos los archivos relacionados a los diferentes modulos solicitados._
 
 - **Bienvenida y Login**
-    -Modulo de bienvenida para registrarse con usuario y clave.
+    - Modulo de bienvenida para registrarse con usuario y clave.
       
 - **Captcha**
-    -Distintas versiones y mejoras del captcha .
+    - Distintas versiones y mejoras del captcha .
 
 - **Modulo Artitmetica**
     - Modulo de operaciones aritmeticas (sumar, restar, dividir, multiplicar, sumar_n cantidad de números y sacr promedio de n cantidad 
@@ -139,12 +139,12 @@ EVIDENCIA 1
 
 - **Documento**
     - Contiene un PDF con los datos solicitados. Esquema:
-       - 1. Portada:
+      1. Portada:
        - a. En en segunda página se incluye el DER.
        - b. Nombre del estudiante.
        - c. Nombre de la asignatura
        - d. Fecha de entrega
-       - 2. Resumen del proyecto:
+      2. Resumen del proyecto:
        - a. Breve descripcion del tema elegido para el proyecto final.
        - b. Objetivos principales.
        - c. Metodologia a utilizar.
