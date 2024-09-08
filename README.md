@@ -90,7 +90,8 @@ InstaTURNO--Grupo3--DS-IA/
     │   ├── Captcha/
     │   │   └── Captcha.py
     │   ├── Modulo Aritmetica/
-    │   │   └── aritmetica.py
+    │   │   ├── aritmetica.py
+    │   │   └── test_aritmetica.py
     │   ├── Registrar un Usuario/
     │   │   └── RegistrarUsuario.py
     │   ├── Aserciones/
@@ -120,6 +121,7 @@ InstaTURNO--Grupo3--DS-IA/
 - **Modulo Artitmetica**
     - Modulo de operaciones aritmeticas (sumar, restar, dividir, multiplicar, sumar_n cantidad de números y sacr promedio de n cantidad 
       de números).
+    - Test de las operaciones con aserciones.
 
 - **Registrar usuario**
     - Modulo para registro de nuevos usuarios.
