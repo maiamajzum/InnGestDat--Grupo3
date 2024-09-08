@@ -83,26 +83,27 @@ Las principales funcionalidades que incluye son:
 
 ```
 InstaTURNO--Grupo3--DS-IA/
-EVIDENCIA 1
-|   ├── APLICACION/
-|   ├── Bienvenida y Login/    
-|   |     └── login.py
-|   ├── Captcha/    
-|   |     └── Captcha.py
-|   ├── Modulo Aritmetica/    
-|   |     └── aritmetica.py
-|   ├── Registrar un Usuario/    
-|   |     └── RegistrarUsuario.py
-|   ├── Aserciones/    
-|   |     └── asersiones.py
-|   ├── BASE DE DATOS
-|   |     ├── CONCLUSION
-|   |     ├── DESCRIPCION
-|   |     ├── DIAGRAMA ER.png
-|   |     ├── Insta-DB2.jpeg
-|   |     └── TABLAS
-|   └── Evidencia_1_10.01v 
-└── README
+└── EVIDENCIA 1
+    ├── APLICACION/
+    │   ├── Bienvenida y Login/
+    │   │   └── login.py
+    │   ├── Captcha/
+    │   │   └── Captcha.py
+    │   ├── Modulo Aritmetica/
+    │   │   └── aritmetica.py
+    │   ├── Registrar un Usuario/
+    │   │   └── RegistrarUsuario.py
+    │   ├── Aserciones/
+    │   │   └── asersiones.py
+    ├── BASE DE DATOS/
+    │   ├── CONCLUSION
+    │   ├── DESCRIPCION
+    │   ├── DIAGRAMA ER.png
+    │   ├── Insta-DB2.jpeg
+    │   └── TABLAS
+    ├── Evidencia_1_10.01v
+    └── README
+
 
 ```
 
