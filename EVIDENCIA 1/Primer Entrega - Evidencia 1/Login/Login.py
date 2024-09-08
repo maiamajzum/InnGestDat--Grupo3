@@ -11,10 +11,12 @@ def login():
 
     if usuarios.get(usuario) == clave:
         print("Acceso concedido")
+        print("\n")
         return True
     
 
     else:
         print("Usuario o clave incorrectos")
+        print("\n")
         return False
 

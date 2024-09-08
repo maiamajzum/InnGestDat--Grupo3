@@ -10,6 +10,7 @@ from Captcha import captcha
 
 def main():
     print("Bienvenido.")
+    print("\n")
     if login():
         registrarUsuario()
 

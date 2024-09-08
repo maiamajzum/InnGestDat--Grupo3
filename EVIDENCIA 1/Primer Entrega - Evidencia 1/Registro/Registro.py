@@ -123,7 +123,7 @@ def registrarUsuario():
             "clave": clave
             }
             print(f"Usuario {nombreUsuario} registrado con éxito.")
-        
+            print("\n")        
         
         
         # Solicitar si se desea registrar otro usuario
