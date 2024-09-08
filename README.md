@@ -1,4 +1,4 @@
-# InstaTURNO
+InstaTURNO
 
 `InstaTURNO` es un sistema de gestión de turnos médicos que permite a los usuarios, en pocos pasos, agendar turnos para estudios médicos y consultas a profesionales de las diversas ramas de la salud.
 
