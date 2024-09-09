@@ -91,17 +91,15 @@ InstaTURNO--Grupo3--DS-IA/
     │   ├── Insta-DB2.jpeg
     │   └── TABLAS 
     ├── Primer Entrega - APLICACION/
-    │   ├── Bienvenida y Login/
-    │   │   └── login.py
-    │   ├── Captcha/
-    │   │   └── Captcha.py
     │   ├── Modulo Aritmetica/
     │   │   ├── aritmetica.py
     │   │   └── test_aritmetica.py
-    │   ├── Registrar un Usuario/
-    │   │   └── RegistrarUsuario.py
-    │   ├── Aserciones/
-    │   │   └── asersiones.py    
+    │   ├── Captcha/
+    │   │   └── Captcha.py    
+    │   ├── Login/
+    │   │   └── login.py    
+    │   └── Registro/
+    │   │   └── Registro.py     
     ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
     └── README
 
@@ -110,22 +108,6 @@ InstaTURNO--Grupo3--DS-IA/
 
 ### Descripcion archivos del repositorio:
 
-> #### **APLICACION**: _Este directorio contiene todos los archivos relacionados a los diferentes modulos solicitados._
-
-- **Bienvenida y Login**
-    - Modulo de bienvenida para registrarse con usuario y clave.
-      
-- **Captcha**
-    - Distintas versiones y mejoras del captcha .
-
-- **Modulo Artitmetica**
-    - Modulo de operaciones aritmeticas (sumar, restar, dividir, multiplicar, sumar_n cantidad de números y sacr promedio de n cantidad 
-      de números).
-    - Test de las operaciones con aserciones.
-
-- **Registrar usuario**
-    - Modulo para registro de nuevos usuarios.
- 
 > #### **BASE DE DATOS**: _Este directorio contiene los archivos solicitados en relacion a la información de la base de datos que utilizaremos en nuestro proyecto._
 
 - **CONCLUSION**
@@ -140,8 +122,27 @@ InstaTURNO--Grupo3--DS-IA/
 - **Insta-DB2.jepg**
     - Diagrama de las tablas futuras del proyecto incorporando más funciones:
 
+> #### **Primer Entrega- APLICACION**: _Este directorio contiene todos los archivos relacionados a los diferentes modulos solicitados._
+
+- **Modulo Artitmetica**
+    - Modulo de operaciones aritmeticas (sumar, restar, dividir, multiplicar, sumar_n cantidad de números y sacr promedio de n cantidad 
+      de números).
+    - Test de las operaciones con aserciones.
+ 
+- **Captcha**
+    - Distintas versiones y mejoras del captcha . 
+      
+- **Login**
+    - Modulo de bienvenida para registrarse con usuario y clave.    
+
+- **Registro**
+    - Modulo para registro de nuevos usuarios.
+
+- **main**
+    - Integra todos los modulos en un programa.
+ 
 - **Evidencia 1 -INNOVACION EN GESTION DE DATOS**
-    - Contiene un Archivo con los datos solicitados. Esquema:
+    - Contiene un PDF con los datos solicitados. Esquema:
     -  1 Portada:
        - a. En en segunda página se incluye el DER.
        - b. Nombre del estudiante.
