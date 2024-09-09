@@ -99,7 +99,7 @@ InstaTURNO--Grupo3--DS-IA/
     │   ├── Login/
     │   │   └── login.py    
     │   └── Registro/
-    │   │   └── Registro.py     
+    │       └── Registro.py     
     ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
     └── README
 
