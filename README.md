@@ -84,7 +84,13 @@ Las principales funcionalidades que incluye son:
 ```
 InstaTURNO--Grupo3--DS-IA/
 └── EVIDENCIA 1
-    ├── APLICACION/
+    ├── BASE DE DATOS/
+    │   ├── CONCLUSION
+    │   ├── DESCRIPCION
+    │   ├── DIAGRAMA ER.png
+    │   ├── Insta-DB2.jpeg
+    │   └── TABLAS 
+    ├── Primer Entrega - APLICACION/
     │   ├── Bienvenida y Login/
     │   │   └── login.py
     │   ├── Captcha/
@@ -95,14 +101,8 @@ InstaTURNO--Grupo3--DS-IA/
     │   ├── Registrar un Usuario/
     │   │   └── RegistrarUsuario.py
     │   ├── Aserciones/
-    │   │   └── asersiones.py
-    ├── BASE DE DATOS/
-    │   ├── CONCLUSION
-    │   ├── DESCRIPCION
-    │   ├── DIAGRAMA ER.png
-    │   ├── Insta-DB2.jpeg
-    │   └── TABLAS
-    ├── Evidencia_1_10.01v
+    │   │   └── asersiones.py    
+    ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
     └── README
 
 
@@ -140,8 +140,8 @@ InstaTURNO--Grupo3--DS-IA/
 - **Insta-DB2.jepg**
     - Diagrama de las tablas futuras del proyecto incorporando más funciones:
 
-- **Documento**
-    - Contiene un PDF con los datos solicitados. Esquema:
+- **Evidencia 1 -INNOVACION EN GESTION DE DATOS**
+    - Contiene un Archivo con los datos solicitados. Esquema:
     -  1 Portada:
        - a. En en segunda página se incluye el DER.
        - b. Nombre del estudiante.
@@ -153,5 +153,4 @@ InstaTURNO--Grupo3--DS-IA/
        - c. Metodologia a utilizar.
        - d. relevancia del proyecto en el contexto académico o profesional.       
        
-- **Evidencia_1_0.01v**
-    - 
+
