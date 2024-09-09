@@ -130,7 +130,7 @@ InstaTURNO--Grupo3--DS-IA/
     - Test de las operaciones con aserciones.
  
 - **Captcha**
-    - Distintas versiones y mejoras del captcha . 
+    - Modulo de captcha para registro de usuarios. 
       
 - **Login**
     - Modulo de bienvenida para registrarse con usuario y clave.    
