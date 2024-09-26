@@ -84,24 +84,36 @@ Las principales funcionalidades que incluye son:
 ```
 InstaTURNO--Grupo3--DS-IA/
 └── EVIDENCIA 1
-    ├── BASE DE DATOS/
-    │   ├── CONCLUSION
-    │   ├── DESCRIPCION
-    │   ├── DIAGRAMA ER.png
-    │   ├── Insta-DB2.jpeg
-    │   └── TABLAS 
-    ├── Primer Entrega - APLICACION/
-    │   ├── Modulo Aritmetica/
-    │   │   ├── aritmetica.py
-    │   │   └── test_aritmetica.py
-    │   ├── Captcha/
-    │   │   └── Captcha.py    
-    │   ├── Login/
-    │   │   └── login.py    
-    │   └── Registro/
-    │       └── Registro.py     
-    ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
-    └── README
+│   ├── BASE DE DATOS/
+│   │   ├── CONCLUSION
+│   │   ├── DESCRIPCION
+│   │   ├── DIAGRAMA ER.png
+│   │   ├── Insta-DB2.jpeg
+│   │   └── TABLAS 
+│   ├── Primer Entrega - APLICACION/
+│   │   ├── Modulo Aritmetica/
+│   │   │   ├── aritmetica.py
+│   │   │   └── test_aritmetica.py
+│   │   ├── Captcha/
+│   │   │   └── Captcha.py    
+│   │   ├── Login/
+│   │   │   └── login.py    
+│   │   └── Registro/
+│   │       └── Registro.py     
+│   ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
+└── EVIDENCIA 2
+│   ├── BaseDeDatos/
+│   │   ├── CRUD/
+│   │   │   ├── Create.sql
+│   │   │   ├── Delete.sql
+│   │   │   ├── Read.sql
+│   │   │   └── Update.sql
+│   │   ├── SCRIPTS/
+│   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
+│   │   │   ├── Turnero_Scripts_Poblado_Tablas.sql
+│   │   │   └── Turnero_Scripts_querys.sql
+│   └── README.md/
+└── README.md/
 
 
 ```
@@ -154,4 +166,27 @@ InstaTURNO--Grupo3--DS-IA/
        - c. Metodologia a utilizar.
        - d. relevancia del proyecto en el contexto académico o profesional.       
        
+> #### **EVIDENCIAA 2**: _Esta carpeta contiene la informacion solicitada en la Evidencia 2._
 
+> #### **BaseDeDatos**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la segunda evidencia._
+
+- **Create.sql**
+    - Consulta para crear un nuevo paciente
+
+- **Delete.sql**
+    - consulta para eliminar un registro de la tabla paciente.
+      
+- **Read.sql**
+    - Consulta para leer el id de un paciente.
+ 
+- **Update.sql**
+    - Consulta para actualizar nombre de paciente.
+  
+- **Turnero_Scripts_Creacion_Esquema_Tablas.sql**
+    - Script para crear la base de datos Turnero con sus respectivas tablas.
+      
+- **Turnero_Scripts_Poblado_Tablas.sql**
+    - Script para poblar las tablas de datos.
+ 
+- **Turnero_Scripts_querys.sql**
+    - Contiene consultas variadas.
