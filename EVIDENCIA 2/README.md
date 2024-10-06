@@ -18,13 +18,15 @@ Bievenido a la guía del proyecto, vamos a llevar tratar de que esta lectura sea
 - Tambien es necesario modificar las credenciales de acceso dentro del programa para que la APP pueda ingresar.
 
 ¿Cómo creo la DB en mi PC?
-- Dentro de la carpeta 'BaseDeDatos' se encuentra la consulta necesaria para crear la DB (y poblar las tablas, para facilitar el testing de la APP)
+- Dentro de la carpeta 'BaseDeDatos' se encuentra la consulta necesaria para crear la DB (y poblar las tablas, para facilitar el testing de la APP).
 
 ¿Cómo modifico las credenciales de acceso?
-- Dentro de las carpetas del proyecto, hay una que se llama 'Conexion' con su respectivo 'conexion.py' dentro
-- el parametro que debe ser modificado está señalado con un comentario dentro del código
+- Dentro de las carpetas del proyecto, hay una que se llama 'Conexion' con su respectivo 'conexion.py' dentro.
+- el parametro que debe ser modificado está señalado con un comentario dentro del código.
 
-
+¿Acceso para ADMIN?
+- Si, en el scypt de poblado de tablas hay un usuario con USER '1' y PASSWORD '1', para facilitar los continuos accesos.
+- Las contraseñas largas no son tan divertidas si tenes que ingresar 100 veces.
 
  _____  _____ ___  ___ _____  _   _  _____   ___  ______  _____  _____  _____ 
 /  __ \|  _  ||  \/  ||  ___|| \ | ||_   _| / _ \ | ___ \|_   _||  _  |/  ___|
