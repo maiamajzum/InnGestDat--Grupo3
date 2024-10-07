@@ -18,7 +18,7 @@ Bievenido a la guía del proyecto, vamos a llevar tratar de que esta lectura sea
 - También es necesario modificar las credenciales de acceso dentro del programa para que la APP pueda ingresar.
 
 ¿Cómo creo la DB en mi PC?
-- Dentro de la carpeta 'BaseDeDatos' se encuentra la consulta necesaria para crear la DB (y poblar las tablas, para facilitar el testing de la APP).
+- Dentro de la carpeta 'SCRIPTS' se encuentra la consulta necesaria para crear la DB (y poblar las tablas, para facilitar el testing de la APP).
 
 ¿Cómo modifico las credenciales de acceso?
 - Dentro de las carpetas del proyecto, hay una que se llama 'Conexion' con su respectivo 'conexion.py' dentro.
