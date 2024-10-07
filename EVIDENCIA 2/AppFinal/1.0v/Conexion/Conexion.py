@@ -5,6 +5,6 @@ def conectar_DB():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="", #COLOCAR CLAVE DE USUARIO
+        password="1234", #COLOCAR CLAVE DE USUARIO
         database="Evidencia2"
     )
