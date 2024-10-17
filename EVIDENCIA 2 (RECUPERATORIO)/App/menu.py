@@ -8,8 +8,8 @@ def menu():
 
     print("SELECIONE:\n")
 
-    print("1 -> Crear Usuario")
-    print("2 -> Ingresar")
+    print("1 -> Ingresar")
+    print("2 -> Crear Usuario")
     print("3 -> Modificar Usuario")
     print("4 -> Eliminar Usuario")
     print("5 -> Buscar Usuario")
@@ -20,9 +20,9 @@ def menu():
 
     match userOp:
         case 1:
-            create_user()
             menu()
         case 2:
+            create_user()
             menu()
         case 3:
             menu()
@@ -33,6 +33,9 @@ def menu():
         case 6:
             menu()
         case 0:
+            exit
+        case _:
+            print("Ingrese una OPCIÓN VÁLIDA")
             menu()
 
 
