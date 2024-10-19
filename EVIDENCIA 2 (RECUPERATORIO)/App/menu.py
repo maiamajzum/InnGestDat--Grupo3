@@ -22,7 +22,9 @@ def menu():
 
     match userOp:
         case 1:
-            ingreso()
+            userName = input("Ingrese USERNAME: ")
+            userPassword = input("Ingrese PASSWORD: ")
+            ingreso(userName, userPassword)
             menu()
         case 2:
             print("CREANDO USUARIO:")
@@ -33,8 +35,11 @@ def menu():
             menu()
         case 3:
             print("MODIFICANDO USUARIO:")
-            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
-            updateUser(userID)
+            userID= int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            userName = input("Ingrese el NOMBRE del USUARIO a MODIFICAR: ")
+            userPassword = input("ingrese PASSWORD del USUARIO a MODIFICIAR: ")
+            userEmail = input("ingrese EMAIL del USUARIO a MODIFICIAR: ")
+            updateUser(userID, userName, userPassword, userEmail)
             menu()
         case 4:
             print("ELIMINANDO USUARIO:")
@@ -42,7 +47,7 @@ def menu():
             deleteUser(userID)
             menu()
         case 5:
-            print("BUSCNADO USUARIO:")
+            print("BUSCANDO USUARIO:")
             userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
             userFinded = findUser(userID)
             if userFinded:
@@ -69,6 +74,8 @@ def create_user():
     userName = input("Ingrese NOMBRE: ")
     userPassword = input("Ingrese PASSWORD: ")
     userEmail = input("Ingrese CORREO ELECTRONICO: ")
+
+    return userID, userName, userPassword, userEmail
 
 
 menu()

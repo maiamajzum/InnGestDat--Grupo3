@@ -118,20 +118,23 @@ def showUser(archivo='usuarios.ispc'):
         print("No se encontraron usuarios.")
 
 
-def updateUser(username: str, password: str, email: str, archivo="usuarios.ispc"):
+def updateUser(userID: int, newUserName: str, newPassword: str, newEmail: str, archivo="usuarios.ispc"):
     usuarios_lista = readUser(archivo)
 
     for usuario in usuarios_lista:
-        if usuario.getUsername() == username:
-            usuario.setUserName(username)
-            usuario.setUserPassword(password)
-            usuario.setEmail(email)
-            
+        if usuario.getId() == userID: 
+            usuario.setUserName(newUserName)
+            usuario.setUserPassword(newPassword)
+            usuario.setEmail(newEmail)
+
             with open(archivo, 'wb') as archivo:
                 pickle.dump(usuarios_lista, archivo)
-            print(f"Usuario con datos actualizados: {usuario.__str__()}.")
+
+            print(f"Usuario con ID {userID} ha sido actualizado: {usuario.__str__()}.")
             return
-    print(f"Usuario con nombre de usuario '{username}' no encontrado.")
+
+    print(f"Usuario con ID {userID} no encontrado.")
+
 
 
 def findUser(id_usuario, archivo='usuarios.ispc'):
@@ -153,10 +156,21 @@ def deleteUser(id, archivo='usuarios.ispc'):
     print(f"Usuario con ID {id} eliminado.")
 
 
-def ingreso():
-    print("    ____   ____ ______ _   __ _    __ ______ _   __ ____ ____   ____  ")
-    print("   / __ ) /  _// ____// | / /| |  / // ____// | / //  _// __ \ / __ \ ")
-    print("  / __  | / / / __/  /  |/ / | | / // __/  /  |/ / / / / / / // / / / ")
-    print(" / /_/ /_/ / / /___ / /|  /  | |/ // /___ / /|  /_/ / / /_/ // /_/ /  ")
-    print("/_____//___//_____//_/ |_/   |___//_____//_/ |_//___//_____/ \____/   ")
-    print("                                                                     ")
+def ingreso(userName: str, userPassword: str, archivo="usuarios.ispc"):
+
+    usuarios_lista = readUser(archivo)
+
+    for usuario in usuarios_lista:
+        if usuario.getUsername() == userName and usuario.getPassword() == userPassword:
+            print(f"¡Hola, {userName}! Bienvenido/a.")
+
+            print("    ____   ____ ______ _   __ _    __ ______ _   __ ____ ____   ____  ")
+            print("   / __ ) /  _// ____// | / /| |  / // ____// | / //  _// __ \ / __ \ ")
+            print("  / __  | / / / __/  /  |/ / | | / // __/  /  |/ / / / / / / // / / / ")
+            print(" / /_/ /_/ / / /___ / /|  /  | |/ // /___ / /|  /_/ / / /_/ // /_/ /  ")
+            print("/_____//___//_____//_/ |_/   |___//_____//_/ |_//___//_____/ \____/   ")
+            print("                                                                     ")
+
+            return
+        else:
+            print("Nombre de usuario o contraseña incorrectos.")
