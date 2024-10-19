@@ -6,5 +6,5 @@ def conectar_DB():
         host="localhost",
         user="root",
         password="1234", #COLOCAR CLAVE DE USUARIO
-        database="Evidencia2"
+        database="evidencia2"
     )
