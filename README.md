@@ -101,6 +101,10 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   └── Registro/
 │   │       └── Registro.py     
 │   ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
+└── EVIDENCIA 2 (RECUPERATORIO)
+│   ├── App/
+│   │   └──  menu.py│
+│   └── usuarios.ispc
 └── EVIDENCIA 2
 │   ├── AppFinal/1.0v/
 │   │   └──  main.py│   │       
@@ -114,7 +118,18 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas.sql
 │   │   │   └── Turnero_Scripts_querys.sql
-
+│   └── README.md/
+└── EVIDENCIA 3      
+│   ├── BaseDeDatos/
+│   │   ├── BACKEND/
+│   │   │   ├── CRUD.py
+│   │   │   ├── Consultas.py
+│   │   │   └── conectar_base_datos.py
+│   │   ├── SCRIPTS MODIFICADOS/
+│   │   │   ├── DER.png
+│   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql
+│   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
+│   │   │   └── Turnero_Scripts_querys_Modificado.sql
 │   └── README.md/
 └── README.md/
 
@@ -167,7 +182,15 @@ InstaTURNO--Grupo3--DS-IA/
        - a. Breve descripcion del tema elegido para el proyecto final.
        - b. Objetivos principales.
        - c. Metodologia a utilizar.
-       - d. relevancia del proyecto en el contexto académico o profesional.       
+       - d. relevancia del proyecto en el contexto académico o profesional.      
+
+ #### **EVIDENCIAA 2 (RECUPERATORIO)**: _Esta carpeta contiene las modificaciones solicitadas en programacion en las correcciones de la Evidencia 2._       
+
+- **menu.py**
+    - Ejecuta el menu para realizar el CRUD de usuario.
+
+- **usuarios.ispc**
+    - Almaaccenalos registros de usuario en archivo.       
        
 > #### **EVIDENCIAA 2**: _Esta carpeta contiene la informacion solicitada en la Evidencia 2._
 
@@ -193,3 +216,35 @@ InstaTURNO--Grupo3--DS-IA/
  
 - **Turnero_Scripts_querys.sql**
     - Contiene consultas variadas.
+ 
+#### **AppFinal/1.0v**: _Este directorio contiene los archivos solicitados en la materia Programacion 1, en relación a la segunda evidencia._
+
+- **main.py**
+    - Se ejecuta para acceder a lainformacion y creacion de usuarios.
+
+#### **EVIDENCIAA 3**: _Esta carpeta contiene la informacion solicitada en la Evidencia 3._
+
+> #### **BaseDeDatos**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la tercera evidencia._
+
+- **CRUD_Turno.py**
+    - Permite realizar la creacion de turno, modificacion de turno, listado de turnos y eliminacion de turnos filtrando por DNI del 
+      paciente.
+      
+- **Consultas.py**
+    - Ejecuta un menu para realizar las consultas planteadas en la evidencia 2 desde python.
+ 
+- **conectar_base_datos.py**
+    - Permite conectarse con la base de datos, colocando los datos correspondientes a las credenciales de acceso del usuario al momento 
+      que instalo MySQL. 
+  
+- **Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql**
+    - Script para crear la base de datos Turnero con sus respectivas tablas teniendo en cuenta las correcciones mencionadas en la 
+      devolucion de la evidencia 2.
+      
+- **Turnero_Scripts_Poblado_Tablas_Modificado.sql**
+    - Script para poblar las tablas de datos tenendo en cuenta los cambios implementados.
+ 
+- **Turnero_Scripts_querys_Modificado.sql**
+    - Contiene consultas variadas teniendo en cuenta los cambios implementados.
+ 
+
