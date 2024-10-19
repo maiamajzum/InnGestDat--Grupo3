@@ -102,6 +102,8 @@ InstaTURNO--Grupo3--DS-IA/
 │   │       └── Registro.py     
 │   ├── Evidencia 1 -INNOVACION EN GESTION DE DATOS
 └── EVIDENCIA 2
+│   ├── AppFinal/1.0v/
+│   │   └──  main.py│   │       
 │   ├── BaseDeDatos/
 │   │   ├── CRUD/
 │   │   │   ├── Create.sql
@@ -112,6 +114,7 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas.sql
 │   │   │   └── Turnero_Scripts_querys.sql
+
 │   └── README.md/
 └── README.md/
 
