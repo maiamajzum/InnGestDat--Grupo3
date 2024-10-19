@@ -180,15 +180,15 @@ InstaTURNO--Grupo3--DS-IA/
        - c. Metodologia a utilizar.
        - d. relevancia del proyecto en el contexto académico o profesional.      
 
- #### **EVIDENCIAA 2 (RECUPERATORIO)**: _Esta carpeta contiene las modificaciones solicitadas en programacion en las correcciones de la Evidencia 2._       
+ #### **EVIDENCIA 2 (RECUPERATORIO)**: _Esta carpeta contiene las modificaciones solicitadas en programacion en las correcciones de la Evidencia 2._       
 
 - **menu.py**
     - Ejecuta el menu para realizar el CRUD de usuario.
 
 - **usuarios.ispc**
-    - Almaaccenalos registros de usuario en archivo.       
+    - Almacenalos registros de usuario en archivo.       
        
-> #### **EVIDENCIAA 2**: _Esta carpeta contiene la informacion solicitada en la Evidencia 2._
+> #### **EVIDENCIA 2**: _Esta carpeta contiene la informacion solicitada en la Evidencia 2._
 
 > #### **BaseDeDatos**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la segunda evidencia._
 
@@ -216,9 +216,9 @@ InstaTURNO--Grupo3--DS-IA/
 #### **AppFinal/1.0v**: _Este directorio contiene los archivos solicitados en la materia Programacion 1, en relación a la segunda evidencia._
 
 - **main.py**
-    - Se ejecuta para acceder a lainformacion y creacion de usuarios.
+    - Se ejecuta para acceder a la informacion y creacion de usuarios.
 
-#### **EVIDENCIAA 3**: _Esta carpeta contiene la informacion solicitada en la Evidencia 3._
+#### **EVIDENCIA 3**: _Esta carpeta contiene la informacion solicitada en la Evidencia 3._
 
 > #### **BaseDeDatos**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la tercera evidencia._
 
