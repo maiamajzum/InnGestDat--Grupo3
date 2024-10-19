@@ -43,12 +43,12 @@ def menu():
             menu()
         case 4:
             print("ELIMINANDO USUARIO:")
-            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            userID = int(input("ingrese ID del USUARIO a ELIMINAR: "))
             deleteUser(userID)
             menu()
         case 5:
             print("BUSCANDO USUARIO:")
-            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            userID = int(input("ingrese ID del USUARIO a BUSCAR: "))
             userFinded = findUser(userID)
             if userFinded:
                 print(f"USUARIO ENCONTRADO -> {userFinded}")
