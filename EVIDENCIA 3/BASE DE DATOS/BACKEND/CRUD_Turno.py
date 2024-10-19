@@ -185,25 +185,31 @@ def main():
         print("5. Salir")
         opcion = input("Selecciona una opción: ")
 
-        if opcion == '1':
-            crear_turno()
-        elif opcion == '2':
-            leer_turnos()
-        elif opcion == '3':
-            modificar_turno()
-        elif opcion == '4':
-            eliminar_turno()
-        elif opcion == '5':
-            print("Hasta luego!")
-            break
-        else:
-            print("Opción no válida. Por favor, intenta de nuevo.")
+        match opcion:
+            case '1':
+                crear_turno()
+            case '2':
+                leer_turnos()
+            case '3':
+                modificar_turno()
+            case '4':
+                eliminar_turno()
+            case '5':
+                print("Hasta luego!")
+                break
+            case _:
+                print("Opción no válida. Por favor, intenta de nuevo.")
         
         # Preguntar si desea realizar otra acción
-        otra_accion = input("¿Deseas realizar otra acción? (s/n): ").strip().lower()
-        if otra_accion != 's':
-            print("Hasta luego!")
-            break
+        while True:
+            otra_accion = input("¿Deseas realizar otra acción? Ingresa 's' para Sí o 'n' para No: ").strip().lower()
+            if otra_accion == 's':
+                break  # Sale del ciclo y continúa con el menú
+            elif otra_accion == 'n':
+                print("Hasta luego!")
+                return  # Termina el programa
+            else:
+                print("Entrada no válida. Por favor, ingresa 's' para Sí o 'n' para No.")
 
 # Llamar a la función principal
 if __name__ == "__main__":
