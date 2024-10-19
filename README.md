@@ -116,7 +116,7 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   └── Turnero_Scripts_querys.sql
 │   └── README.md/
 └── EVIDENCIA 3      
-│   ├── BAASE DE DATOS/
+│   ├── BASE DE DATOS/
 │   │   ├── BACKEND/
 │   │   │   ├── CRUD.py
 │   │   │   ├── Consultas.py
