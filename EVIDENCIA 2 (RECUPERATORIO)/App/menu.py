@@ -1,3 +1,5 @@
+from user import *
+
 def menu():
 
     print("    __  ___ ______ _   __ __  __")
@@ -20,17 +22,37 @@ def menu():
 
     match userOp:
         case 1:
+            ingreso()
             menu()
         case 2:
-            create_user()
+            print("CREANDO USUARIO:")
+            userID, userName, userPassword, userEmail = create_user()
+            newUser = Usuario(userID, userName, userPassword, userEmail)
+            addUser(newUser)
+            print("Usuario AGREGADO.")
             menu()
         case 3:
+            print("MODIFICANDO USUARIO:")
+            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            updateUser(userID)
             menu()
         case 4:
+            print("ELIMINANDO USUARIO:")
+            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            deleteUser(userID)
             menu()
         case 5:
+            print("BUSCNADO USUARIO:")
+            userID = int(input("ingrese ID del USUARIO a MODIFICAR: "))
+            userFinded = findUser(userID)
+            if userFinded:
+                print(f"USUARIO ENCONTRADO -> {userFinded}")
+            else:
+                print("NO SE ENCONTRÓ.")
             menu()
         case 6:
+            print("MOSTRAR TODO: ")
+            showUser()
             menu()
         case 0:
             exit

@@ -1,3 +1,5 @@
+import pickle
+
 # - CLASS -> USUARIO -
 class Usuario:
     __userID: int
@@ -78,3 +80,83 @@ class Acceso:
 
     def __str__(self) -> str:
         return f"ID: {self.__id} - Usuario: {self.__usuarioLogueado} - Fecha de Ingreso: {self.__fechaIngreso} - Fecha de Egreso: {self.__fechaSalida}"
+
+
+# --> MÉTODOS <--
+
+
+def readUser(archivo="usuarios.ispc"):
+    try:
+        with open(archivo, "rb") as archivo:
+            usuarios = pickle.load(archivo)
+    except (FileNotFoundError, EOFError):
+        usuarios = []
+    return usuarios
+
+
+def addUser(usuario: Usuario, archivo="usuarios.ispc"):
+    try:
+        usuariosEnLista = readUser(archivo)  
+    except Exception as e:
+        print(f"Error al leer el archivo: {e}")
+        return
+
+    usuariosEnLista.append(usuario)  
+
+    with open(archivo, 'wb') as archivo:
+        pickle.dump(usuariosEnLista, archivo) 
+
+    print(f"El USUARIO: {usuario.getUsername()} ha sido agregado.")
+
+
+def showUser(archivo='usuarios.ispc'): 
+    try:
+        usuarios_lista = readUser(archivo)
+        for usuario in usuarios_lista:
+            print(usuario)
+    except FileNotFoundError:
+        print("No se encontraron usuarios.")
+
+
+def updateUser(username: str, password: str, email: str, archivo="usuarios.ispc"):
+    usuarios_lista = readUser(archivo)
+
+    for usuario in usuarios_lista:
+        if usuario.getUsername() == username:
+            usuario.setUserName(username)
+            usuario.setUserPassword(password)
+            usuario.setEmail(email)
+            
+            with open(archivo, 'wb') as archivo:
+                pickle.dump(usuarios_lista, archivo)
+            print(f"Usuario con datos actualizados: {usuario.__str__()}.")
+            return
+    print(f"Usuario con nombre de usuario '{username}' no encontrado.")
+
+
+def findUser(id_usuario, archivo='usuarios.ispc'):
+    usuarios_lista = readUser(archivo)
+    for usuario in usuarios_lista:
+        if usuario.getId() == id_usuario:
+            return usuario
+    return None
+
+
+def deleteUser(id, archivo='usuarios.ispc'):
+    usuarios_lista = readUser(archivo)
+
+    usuarios_filtrados = [usuario for usuario in usuarios_lista if usuario.getId() != id]
+
+    with open(archivo, 'wb') as archivo:
+        pickle.dump(usuarios_filtrados, archivo)
+
+    print(f"Usuario con ID {id} eliminado.")
+
+
+def ingreso():
+    print("    ____   ____ ______ _   __ _    __ ______ _   __ ____ ____   ____  ")
+    print("   / __ ) /  _// ____// | / /| |  / // ____// | / //  _// __ \ / __ \ ")
+    print("  / __  | / / / __/  /  |/ / | | / // __/  /  |/ / / / / / / // / / / ")
+    print(" / /_/ /_/ / / /___ / /|  /  | |/ // /___ / /|  /_/ / / /_/ // /_/ /  ")
+    print("/_____//___//_____//_/ |_/   |___//_____//_/ |_//___//_____/ \____/   ")
+    print("                                                                     ")
