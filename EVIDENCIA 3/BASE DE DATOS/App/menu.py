@@ -1,4 +1,5 @@
 from user import *
+from registro_pluvial import *
 
 def menu():
 
@@ -61,7 +62,8 @@ def menu():
             showUser()
             menu()
         case 99:
-            print("Accediendo al menú de REGISTROS PLUVIALES:")
+            registroPluvialMenu()
+            menu()
         case 0:
             exit
         case _:
