@@ -1,4 +1,5 @@
 from user import *
+from registro_pluvial import *
 
 def menu():
 
@@ -16,6 +17,7 @@ def menu():
     print("4 -> Eliminar Usuario")
     print("5 -> Buscar Usuario")
     print("6 -> Mostrar todos los usuarios")
+    print("99 -> Registros Pluviales")
     print("0 ->Salir")
 
     userOp = int(input("SELECCIÓN: "))
@@ -58,6 +60,9 @@ def menu():
         case 6:
             print("MOSTRAR TODO: ")
             showUser()
+            menu()
+        case 99:
+            registroPluvialMenu()
             menu()
         case 0:
             exit
