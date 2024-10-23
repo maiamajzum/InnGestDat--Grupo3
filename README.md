@@ -115,7 +115,11 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas.sql
 │   │   │   └── Turnero_Scripts_querys.sql
 │   └── README.md/
-└── EVIDENCIA 3      
+└── EVIDENCIA 3
+│   ├── App/
+│   │   ├── menu.py
+│   │   ├── registro_pluvial.py
+│   │   └── user.py
 │   ├── BASE DE DATOS/
 │   │   ├── BACKEND/
 │   │   │   ├── CRUD.py
@@ -126,23 +130,12 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
 │   │   │   └── Turnero_Scripts_querys_Modificado.sql
-│   └── PROGRAMACION/App
+└── PROYECTO FINAL
+│   └── App
 │   │   ├── App/
-│   │   │   ├── menu.py
-│   │   │   ├── registro_pluvial.py
-│   │   │   └── user.py
-└── PROYECTO FINAL     
-│   ├── BASE DE DATOS/
-│   │   ├── SCRIPTS MODIFICADOS/
-│   │   │   ├── DER.png
-│   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql
-│   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
-│   │   │   └── Turnero_Scripts_querys_Modificado.sql
-│   └── PROGRAMACION/App
-│   │   ├── App/
-│   │   │   ├── menu.py
-│   │   │   ├── registro_pluvial.py
-│   │   │   └── user.py
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
 └── README.md/
 
 
@@ -236,6 +229,17 @@ InstaTURNO--Grupo3--DS-IA/
 
 #### **EVIDENCIA 3**: _Esta carpeta contiene la informacion solicitada en la Evidencia 3._
 
+  > #### **App**: _Este directorio contiene los archivos solicitados en la materia Programaacion 1, en relación a la tercera evidencia._
+ 
+- **menu.py**
+    - Ejecuta el menu conlas opciones solicitadas.
+      
+- **registro_pluvial.py**
+    - Funcion para crear aleatoriamente y almacenar losregistros pluviales
+ 
+- **user.py**
+    - Funciones para gestionar lanformacion de usuarios y sus accesos.
+
 > #### **BASE DE DATOS**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la tercera evidencia._
 
 - **CRUD_Turno.py**
@@ -259,13 +263,4 @@ InstaTURNO--Grupo3--DS-IA/
 - **Turnero_Scripts_querys_Modificado.sql**
     - Contiene consultas variadas teniendo en cuenta los cambios implementados.
  
-  > #### **PROGRAMACION**: _Este directorio contiene los archivos solicitados en la materia Programaacion 1, en relación a la tercera evidencia._
- 
-- **menu.py**
-    - Ejecuta el menu conlas opciones solicitadas.
-      
-- **registro_pluvial.py**
-    - Funcion para crear aleatoriamente y almacenar losregistros pluviales
- 
-- **user.py**
-    - Funciones para gestionar lanformacion de usuarios y sus accesos.
+
