@@ -108,7 +108,7 @@ def addUser(usuario: Usuario, archivo="usuarios.ispc"):
     with open(archivo, 'wb') as archivo_binario:
         pickle.dump(usuariosEnLista, archivo_binario)
 
-    print(f"El USUARIO: {usuario.getUsername()} ha sido agregado.")
+    print(f"\nEl USUARIO: {usuario.getUsername()} ha sido agregado.")
 
 
 def showUser(archivo='usuarios.ispc'):
@@ -132,18 +132,69 @@ def updateUser(userID: int, newUserName: str, newPassword: str, newEmail: str, a
             with open(archivo, 'wb') as archivo_binario:
                 pickle.dump(usuarios_lista, archivo_binario)
 
-            print(f"Usuario con ID {userID} ha sido actualizado: {usuario.__str__()}.")
+            print(f"\nUsuario con ID {userID} ha sido actualizado: {usuario.__str__()}.")
             return
 
-    print(f"Usuario con ID {userID} no encontrado.")
+    print(f"\nUsuario con ID {userID} no encontrado.")
 
 
-def findUser(id_usuario, archivo='usuarios.ispc'):
+# -- CAMBIO MAYOR --
+
+""" 
+    Qué cambió? Para no perder la funcionalidad original (buscar por ID) modificamos los parametros que recibe la función
+    Ahora, te permite elegir si queres por ID o por NOMBRE
+
+    POR NOMBRE --> controla si está ordenado o no y aplica los criterios de busqueda de la EVIDENCIA 3!!!
+"""
+
+def findUser(userOp: int, archivo='usuarios.ispc'):
     usuarios_lista = readUser(archivo)
-    for usuario in usuarios_lista:
-        if usuario.getId() == id_usuario:
-            return usuario
-    return None
+
+    if userOp == 1:
+
+        valor = int(input("\nIngrese ID del USUARIO a BUSCAR: "))
+        # Búsqueda por ID
+        for usuario in usuarios_lista:
+            if usuario.getId() == valor:
+                print(f"Usuario encontrado: {usuario}")
+                return usuario
+        print(f"Usuario con ID {valor} no encontrado.")
+    
+    elif userOp == 2:
+
+        valor = input("\nIngrese NOMBRE del USUARIO a BUSCAR: ")
+        # Verificamos --> lista ordenada
+        ordenada = all(usuarios_lista[i].getUsername() <= usuarios_lista[i + 1].getUsername() for i in range(len(usuarios_lista) - 1))
+
+        if ordenada: # Técnica de búsqueda BINARIA
+            
+            izquierda, derecha = 0, len(usuarios_lista) - 1
+
+            while izquierda <= derecha:
+                medio = (izquierda + derecha) // 2
+                usuario_medio = usuarios_lista[medio].getUsername()
+
+                if usuario_medio == valor:
+                    print(f"\nUsuario encontrado mediante Metodo BINARIO: \n{usuarios_lista[medio]}")
+                    return usuarios_lista[medio]
+                elif usuario_medio < valor:
+                    izquierda = medio + 1
+                else:
+                    derecha = medio - 1
+
+            print(f"\nUsuario con nombre de usuario '{valor}' no encontrado.")
+
+        else:  #Técnica de búsqueda SECUENCIALn
+            
+            for usuario in usuarios_lista:
+                if usuario.getUsername() == valor:
+                    print(f"\nUsuario encontrado mediante Metodo SECUENCAIL: \n{usuario}")
+                    return usuario
+            print(f"\nUsuario con nombre de usuario '{valor}' no encontrado.")
+
+    else:
+        print("Parámetro de búsqueda no válido. Utiliza 1 para buscar por ID o 2 para buscar por Username.")
+
 
 
 def deleteUser(id, archivo='usuarios.ispc'):

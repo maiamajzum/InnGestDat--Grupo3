@@ -28,6 +28,7 @@ def menu():
             userName = input("Ingrese USERNAME: ")
             userPassword = input("Ingrese PASSWORD: ")
             ingreso(userName, userPassword)
+            print("\n")
             menu()
         case 2:
             print("CREANDO USUARIO:")
@@ -35,6 +36,7 @@ def menu():
             newUser = Usuario(userID, userName, userPassword, userEmail)
             addUser(newUser)
             print("Usuario AGREGADO.")
+            print("\n")
             menu()
         case 3:
             print("MODIFICANDO USUARIO:")
@@ -43,24 +45,30 @@ def menu():
             userPassword = input("ingrese PASSWORD del USUARIO a MODIFICIAR: ")
             userEmail = input("ingrese EMAIL del USUARIO a MODIFICIAR: ")
             updateUser(userID, userName, userPassword, userEmail)
+            print("\n")
             menu()
         case 4:
             print("ELIMINANDO USUARIO:")
             userID = int(input("ingrese ID del USUARIO a ELIMINAR: "))
             deleteUser(userID)
+            print("\n")
             menu()
         case 5:
             print("BUSCANDO USUARIO:")
-            userID = int(input("ingrese ID del USUARIO a BUSCAR: "))
-            userFinded = findUser(userID)
-            if userFinded:
-                print(f"USUARIO ENCONTRADO -> {userFinded}")
-            else:
-                print("NO SE ENCONTRÓ.")
+            print("1 -> Para buscar por ID")
+            print("2 -> Para buscar por NOMBRE")
+            userOp = int(input("Selección: "))
+            findUser(userOp)
+            #userFinded = findUser(userOp)
+            # if userFinded:
+            #     print(f"USUARIO ENCONTRADO -> {userFinded}\n")
+            # else:
+            #     print("NO SE ENCONTRÓ.\n")
             menu()
         case 6:
             print("MOSTRAR TODO: ")
             showUser()
+            print("\n")
             menu()
         case 7:
             print("1 -> Ordenar Usuarios: BURBUJA")
@@ -70,12 +78,15 @@ def menu():
             match userOp:
                 case "1":
                     ordenBurbuja()
+                    print("\n")
                     menu()
                 case "2":
                     ordenSort()
+                    print("\n")
                     menu()
                 case _:
                     print("Ingrese una OPCIÓN VÁLIDA")
+                    print("\n")
                     menu()
 
 
