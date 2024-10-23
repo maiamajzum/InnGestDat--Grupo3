@@ -17,6 +17,7 @@ def menu():
     print("4 -> Eliminar Usuario")
     print("5 -> Buscar Usuario")
     print("6 -> Mostrar todos los usuarios")
+    print("7 -> Ordenar Usuarios")
     print("99 -> Registros Pluviales")
     print("0 ->Salir")
 
@@ -61,6 +62,23 @@ def menu():
             print("MOSTRAR TODO: ")
             showUser()
             menu()
+        case 7:
+            print("1 -> Ordenar Usuarios: BURBUJA")
+            print("2 -> Ordenar Usuarios: SORT")
+            userOp = input("Opción: ")
+
+            match userOp:
+                case "1":
+                    ordenBurbuja()
+                    menu()
+                case "2":
+                    ordenSort()
+                    menu()
+                case _:
+                    print("Ingrese una OPCIÓN VÁLIDA")
+                    menu()
+
+
         case 99:
             registroPluvialMenu()
             menu()

@@ -87,8 +87,8 @@ class Acceso:
 
 def readUser(archivo="usuarios.ispc"):
     try:
-        with open(archivo, "rb") as archivo:
-            usuarios = pickle.load(archivo)
+        with open(archivo, "rb") as archivo_binario:
+            usuarios = pickle.load(archivo_binario)
     except (FileNotFoundError, EOFError):
         usuarios = []
     return usuarios
@@ -96,20 +96,20 @@ def readUser(archivo="usuarios.ispc"):
 
 def addUser(usuario: Usuario, archivo="usuarios.ispc"):
     try:
-        usuariosEnLista = readUser(archivo)  
+        usuariosEnLista = readUser(archivo)
     except Exception as e:
         print(f"Error al leer el archivo: {e}")
         return
 
-    usuariosEnLista.append(usuario)  
+    usuariosEnLista.append(usuario)
 
-    with open(archivo, 'wb') as archivo:
-        pickle.dump(usuariosEnLista, archivo) 
+    with open(archivo, 'wb') as archivo_binario:
+        pickle.dump(usuariosEnLista, archivo_binario)
 
     print(f"El USUARIO: {usuario.getUsername()} ha sido agregado.")
 
 
-def showUser(archivo='usuarios.ispc'): 
+def showUser(archivo='usuarios.ispc'):
     try:
         usuarios_lista = readUser(archivo)
         for usuario in usuarios_lista:
@@ -122,19 +122,18 @@ def updateUser(userID: int, newUserName: str, newPassword: str, newEmail: str, a
     usuarios_lista = readUser(archivo)
 
     for usuario in usuarios_lista:
-        if usuario.getId() == userID: 
+        if usuario.getId() == userID:
             usuario.setUserName(newUserName)
             usuario.setUserPassword(newPassword)
             usuario.setEmail(newEmail)
 
-            with open(archivo, 'wb') as archivo:
-                pickle.dump(usuarios_lista, archivo)
+            with open(archivo, 'wb') as archivo_binario:
+                pickle.dump(usuarios_lista, archivo_binario)
 
             print(f"Usuario con ID {userID} ha sido actualizado: {usuario.__str__()}.")
             return
 
     print(f"Usuario con ID {userID} no encontrado.")
-
 
 
 def findUser(id_usuario, archivo='usuarios.ispc'):
@@ -150,8 +149,8 @@ def deleteUser(id, archivo='usuarios.ispc'):
 
     usuarios_filtrados = [usuario for usuario in usuarios_lista if usuario.getId() != id]
 
-    with open(archivo, 'wb') as archivo:
-        pickle.dump(usuarios_filtrados, archivo)
+    with open(archivo, 'wb') as archivo_binario:
+        pickle.dump(usuarios_filtrados, archivo_binario)
 
     print(f"Usuario con ID {id} eliminado.")
 
@@ -174,3 +173,33 @@ def ingreso(userName: str, userPassword: str, archivo="usuarios.ispc"):
             return
         else:
             print("Nombre de usuario o contraseña incorrectos.")
+
+
+""" FUNCIONES DE ORDEN --> EVIDENCIA 3 """
+
+def ordenBurbuja(archivo="usuarios.ispc"):
+    usuarios = readUser(archivo)
+
+    # Algoritmo BURBUJA °o°
+    for i in range(len(usuarios)):
+        for j in range(0, len(usuarios)-i-1):
+            if usuarios[j].getUsername() > usuarios[j+1].getUsername():
+                usuarios[j], usuarios[j+1] = usuarios[j+1], usuarios[j]
+
+
+    with open(archivo, 'wb') as archivo: #Guarda todo ordenado!
+        pickle.dump(usuarios, archivo)
+
+    print("Usuarios ordenados por el método BURBUJA.")
+    showUser() #reciclandooo
+
+def ordenSort(archivo="usuarios.ispc"):
+    usuarios = readUser(archivo)
+
+    usuarios_ordenados = sorted(usuarios, key=lambda usuario: usuario.getUsername())
+
+    with open(archivo, 'wb') as archivo_binario:
+        pickle.dump(usuarios_ordenados, archivo_binario)
+
+    print("Usuarios ordenados por el método SORT.")
+    showUser(archivo)
