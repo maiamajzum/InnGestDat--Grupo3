@@ -1,4 +1,6 @@
 import pickle
+import os
+from datetime import datetime
 
 # - CLASS -> USUARIO -
 class Usuario:
@@ -161,8 +163,7 @@ def ingreso(userName: str, userPassword: str, archivo="usuarios.ispc"):
 
     for usuario in usuarios_lista:
         if usuario.getUsername() == userName and usuario.getPassword() == userPassword:
-            print(f"¡Hola, {userName}! Bienvenido/a.")
-
+            print(f"\n¡Hola, {userName}! Bienvenido/a.")
             print("    ____   ____ ______ _   __ _    __ ______ _   __ ____ ____   ____  ")
             print("   / __ ) /  _// ____// | / /| |  / // ____// | / //  _// __ \ / __ \ ")
             print("  / __  | / / / __/  /  |/ / | | / // __/  /  |/ / / / / / / // / / / ")
@@ -170,12 +171,30 @@ def ingreso(userName: str, userPassword: str, archivo="usuarios.ispc"):
             print("/_____//___//_____//_/ |_/   |___//_____//_/ |_//___//_____/ \____/   ")
             print("                                                                     ")
 
+            logs(userName)
             return
-        else:
-            print("Nombre de usuario o contraseña incorrectos.")
+
+    # Corregido! había que sacarlo del bucle
+    print("\nNombre de usuario o contraseña incorrectos.")
+    logs("Ingreso Fallido")
+
+def logs(userName: str, archivo_log="logs.txt"):
+    
+    if not os.path.exists(archivo_log):
+        with open(archivo_log, 'w') as archivo:
+            archivo.write("Registro de ingresos de usuarios\n")
+            archivo.write("---------------------------------\n")
+    
+    fecha_hora_actual = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    # Guarda -> user y fecha
+    with open(archivo_log, 'a') as archivo:
+        archivo.write(f"Usuario: {userName} - Fecha y hora: {fecha_hora_actual}\n")
+
 
 
 """ FUNCIONES DE ORDEN --> EVIDENCIA 3 """
+
 
 def ordenBurbuja(archivo="usuarios.ispc"):
     usuarios = readUser(archivo)

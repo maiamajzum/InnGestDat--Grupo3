@@ -1,0 +1,15 @@
+Registro de ingresos de usuarios
+---------------------------------
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:42:46
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:42:55
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:43:00
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:43:19
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:43:33
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:44:00
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:44:09
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:47:16
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:47:45
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:47:51
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:48:20
+Usuario: Ingreso Fallido - Fecha y hora: 2024-10-23 14:48:28
+Usuario: matias - Fecha y hora: 2024-10-23 14:50:48
