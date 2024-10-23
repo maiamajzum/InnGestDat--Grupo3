@@ -53,10 +53,6 @@ Las principales funcionalidades que incluye son:
     - Instituto Superior Politécnico Córdoba
 
 ### Grupo 3 - Integrantes:
-- **ALCALDE, MARIANA ANDREA**
-    - _Usuario GitHub_: [marianaalcalde](https://github.com/marianaalcalde)
-    - _Mail_: alcalde.research@gmail.com
-    - _DNI_: 25246330
 - **ASTORGA DE GIUSTI, MATIAS ALEJANDRO**
     - _Usuario GitHub_: [30matias30](https://github.com/30matias30)
     - _Mail_: 30matias30@gmail.com
