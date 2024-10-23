@@ -126,7 +126,23 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
 │   │   │   └── Turnero_Scripts_querys_Modificado.sql
-│   └── PROGRAMACION/
+│   └── PROGRAMACION/App
+│   │   ├── App/
+│   │   │   ├── menu.py
+│   │   │   ├── registro_pluvial.py
+│   │   │   └── user.py
+└── PROYECTO FINAL     
+│   ├── BASE DE DATOS/
+│   │   ├── SCRIPTS MODIFICADOS/
+│   │   │   ├── DER.png
+│   │   │   ├── Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql
+│   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
+│   │   │   └── Turnero_Scripts_querys_Modificado.sql
+│   └── PROGRAMACION/App
+│   │   ├── App/
+│   │   │   ├── menu.py
+│   │   │   ├── registro_pluvial.py
+│   │   │   └── user.py
 └── README.md/
 
 
@@ -220,7 +236,7 @@ InstaTURNO--Grupo3--DS-IA/
 
 #### **EVIDENCIA 3**: _Esta carpeta contiene la informacion solicitada en la Evidencia 3._
 
-> #### **BaseDeDatos**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la tercera evidencia._
+> #### **BASE DE DATOS**: _Este directorio contiene los archivos solicitados en la materia Base de Datos 2, en relación a la tercera evidencia._
 
 - **CRUD_Turno.py**
     - Permite realizar la creacion de turno, modificacion de turno, listado de turnos y eliminacion de turnos filtrando por DNI del 
@@ -243,4 +259,13 @@ InstaTURNO--Grupo3--DS-IA/
 - **Turnero_Scripts_querys_Modificado.sql**
     - Contiene consultas variadas teniendo en cuenta los cambios implementados.
  
-
+  > #### **PROGRAMACION**: _Este directorio contiene los archivos solicitados en la materia Programaacion 1, en relación a la tercera evidencia._
+ 
+- **menu.py**
+    - Ejecuta el menu conlas opciones solicitadas.
+      
+- **registro_pluvial.py**
+    - Funcion para crear aleatoriamente y almacenar losregistros pluviales
+ 
+- **user.py**
+    - Funciones para gestionar lanformacion de usuarios y sus accesos.
