@@ -33,7 +33,6 @@ def main():
         case 2:
             userName = input(f"{YELLOW}NOMBRE: {RESET}")
             userPassword = input(f"{YELLOW}CONTRASEÑA: {RESET}")
-            ingreso(userName, userPassword)
             if not ingreso(userName, userPassword):
                 print("Regresando al menú principal...")
                 main()
