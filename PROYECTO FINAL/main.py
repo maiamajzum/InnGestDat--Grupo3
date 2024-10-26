@@ -34,7 +34,9 @@ def main():
             userName = input(f"{YELLOW}NOMBRE: {RESET}")
             userPassword = input(f"{YELLOW}CONTRASEÑA: {RESET}")
             ingreso(userName, userPassword)
-    
+            if not ingreso(userName, userPassword):
+                print("Regresando al menú principal...")
+                main()
             cursor, conn = mainbd()  # Obtener cursor y conexión
 
             if cursor is None or conn is None:
