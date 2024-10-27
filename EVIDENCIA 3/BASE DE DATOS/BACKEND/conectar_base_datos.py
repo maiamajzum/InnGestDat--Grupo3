@@ -5,6 +5,6 @@ def conectar_base_datos():
     return connector.connect(
         host="localhost",
         user="root",
-        password="1234",
+        password="123456789",
         database="Turnero"
     )
