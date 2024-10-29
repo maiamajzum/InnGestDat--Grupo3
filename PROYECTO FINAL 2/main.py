@@ -35,7 +35,7 @@ def main():
             acceso= ingreso(userName, userPassword)
 
             if acceso:
-                menu_principalDB()
+                solicitar_datos_conexion()
 
         case 3:
             menu_lluvia()
