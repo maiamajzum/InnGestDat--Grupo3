@@ -2,3 +2,5 @@ Registro de ingresos de usuarios
 ---------------------------------
 Usuario: 1 - Password: 1 - Fecha y hora: 2024-10-27 16:31:40
 Usuario: 2 - Password: 2 - Fecha y hora: 2024-10-30 13:59:35
+Usuario: 2 - Password: 2 - Fecha y hora: 2024-10-30 16:19:59
+Usuario: 1 - Password: 3 - Fecha y hora: 2024-10-30 16:27:40

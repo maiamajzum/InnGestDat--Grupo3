@@ -34,8 +34,13 @@ def main():
             userPassword = input(f"{YELLOW}CONTRASEÑA: {RESET}")
             acceso= ingreso(userName, userPassword)
 
-            if acceso:
-                solicitar_datos_conexion()
+            while True:
+                if acceso:
+                    solicitar_datos_conexion()
+                    break
+                else:
+                    break
+            main()
 
         case 3:
             menu_lluvia()

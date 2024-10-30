@@ -41,7 +41,7 @@ def solicitar_datos_conexion():
     except Error as e:
         print(f"{RED}Error al conectar a la base de datos: {e}{RESET}")
         print(f"{YELLOW}Datos de conexión incorrectos. Regresando al menú anterior...{RESET}")
-        return  # Regresa al menú anterior
+        return True  # Regresa al menú anterior
 
 def conectar():
     if conexion is not None and conexion.is_connected():
