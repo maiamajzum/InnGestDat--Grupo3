@@ -1,3 +1,0 @@
-Registro de ingresos de usuarios
----------------------------------
-Usuario: 1 - Password: 1 - Fecha y hora: 2024-10-27 16:31:40

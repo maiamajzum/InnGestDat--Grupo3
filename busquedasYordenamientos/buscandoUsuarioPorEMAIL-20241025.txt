@@ -1,4 +1,0 @@
-Búsqueda Binaria por EMAIL: buscando el email '6' en el archivo 'usuarios.ispc' que contiene 1 usuarios.
-Intento 1: Email del usuario de la posición 0 es 'maia@majzum.com'. 
-Se realizaron 1 intentos y no se encontró el email buscado, no está registrado.
-

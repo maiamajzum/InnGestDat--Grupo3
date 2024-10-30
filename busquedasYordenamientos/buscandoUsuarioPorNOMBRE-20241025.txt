@@ -1,3 +1,0 @@
-Búsqueda Binaria por NOMBRE: buscando el nombre 'Maia' en el archivo 'usuariosOrdenadosPorUsername.ispc' que contiene 6 usuarios.
-Intento 1: Nombre del usuario de la posición 2 es 'Gisela'. Intento 2: Nombre del usuario de la posición 4 es 'Myriam'. Intento 3: Nombre del usuario de la posición 3 es 'Maia'. Se encontró el usuario en 3 intentos.
-
