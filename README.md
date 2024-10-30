@@ -127,11 +127,6 @@ InstaTURNO--Grupo3--DS-IA/
 │   │   │   ├── Turnero_Scripts_Poblado_Tablas_Modificado.sql
 │   │   │   └── Turnero_Scripts_querys_Modificado.sql
 └── PROYECTO FINAL
-│   └── App
-│   │   ├── App/
-│   │   │   ├── 
-│   │   │   ├── 
-│   │   │   └── 
 └── README.md/
 
 
