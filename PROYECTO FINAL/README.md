@@ -58,7 +58,7 @@ InstaTURNO--Grupo3--DS-IA/
 - **Turnero_Scripts_Poblado_Tablas_Modificado.sql**
     - Script para poblar las tablas de datos tenendo en cuenta los cambios implementados.
  
-> #### **busquedaYordenamientos**: _Este directorio almacena los datos de busqueda y ordenamientos realizados en archivos txt
+> #### **busquedaYordenamientos**: _Este directorio almacena los datos de busqueda y ordenamientos realizados en archivos txt.
 
 > #### **datosAnalizados**: _Este directorio almacena los graficos realizados en relación al registro pluvial en formato png y csv según especificación del usuario en la consulta.
 
