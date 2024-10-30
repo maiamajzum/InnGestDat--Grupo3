@@ -78,7 +78,7 @@ def menu_pacientes():
         print("2 -> Mostrar todos los Pacientes")
         print("3 -> Crear un Paciente")
         print("4 -> Actualizar un Paciente")
-        print("5 -> Eliminar un Paciente")
+        #print("5 -> Eliminar un Paciente")
         print(f"{RED}\n0 -> Volver al Menú Principal{RESET}")
         
         opcion = input("Seleccione una opción: ")
@@ -91,8 +91,8 @@ def menu_pacientes():
             crear_paciente()
         elif opcion == "4":
             actualizar_paciente()
-        elif opcion == "5":
-            eliminar_paciente()
+        #elif opcion == "5": Eliminado para evitar errores!!
+        #    eliminar_paciente()
         elif opcion == "0":
             break
         else:
@@ -106,7 +106,7 @@ def menu_doctores():
         print("3 -> Buscar Doctor por Especialidad (JOIN)")
         print("4 -> Crear un Doctor")
         print("5 -> Actualizar un Doctor")
-        print("6 -> Eliminar un Doctor")
+        #print("6 -> Eliminar un Doctor")
         print(f"{RED}\n0 -> Volver al Menú Principal{RESET}")
         
         opcion = input("Seleccione una opción: ")
@@ -121,8 +121,8 @@ def menu_doctores():
             crear_doctor()
         elif opcion == "5":
             actualizar_doctor()
-        elif opcion == "6":
-            eliminar_doctor()
+        #elif opcion == "6": Eliminado para evitar errores!!
+        #    eliminar_doctor()
         elif opcion == "0":
             break
         else:
