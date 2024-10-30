@@ -64,7 +64,7 @@ def ingreso(userName: str, userPassword: str, archivo="usuarios.ispc") -> None:
 
             if usuarioLogeado:
                 crearAcceso(usuario.getId(), usuarioLogeado)  # Usamos getUsername() en lugar de userName
-            return
+            return True
 
     # Mensaje de error si no se encuentra el usuario o la contraseña es incorrecta
     print(f"{RED}\nNombre de usuario o contraseña incorrectos.{RESET}")

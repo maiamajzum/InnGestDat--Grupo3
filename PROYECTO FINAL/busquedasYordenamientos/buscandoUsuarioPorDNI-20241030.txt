@@ -1,0 +1,3 @@
+Búsqueda Binaria por DNI: buscando el DNI 1 en el archivo 'usuarios.ispc' que contiene 1 usuarios.
+Intento 1: DNI del usuario de la posición 0 es 1. Se encontró el usuario en 1 intentos.
+

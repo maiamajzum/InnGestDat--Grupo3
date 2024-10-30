@@ -1,0 +1,4 @@
+Búsqueda Binaria por EMAIL: buscando el email '1' en el archivo 'usuarios.ispc' que contiene 1 usuarios.
+Intento 1: Email del usuario de la posición 0 es '1'. 
+[92mSe encontró el usuario en 1 intentos.
+

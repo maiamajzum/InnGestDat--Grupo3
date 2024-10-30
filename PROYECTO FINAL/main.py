@@ -2,8 +2,7 @@ from gestionUsuario import *
 from gestionAcceso import *
 from gestionPluvial import *
 from colores import *
-from gestionbd import *
-
+from gestionDB import *
 
 def main():
 
@@ -33,23 +32,11 @@ def main():
         case 2:
             userName = input(f"{YELLOW}NOMBRE: {RESET}")
             userPassword = input(f"{YELLOW}CONTRASEÑA: {RESET}")
+            acceso= ingreso(userName, userPassword)
 
-            # Verificar las credenciales
-            if ingreso(userName, userPassword):  
-                cursor, conn = mainbd()  # Obtener cursor y conexión
-        
-                if cursor is None or conn is None:
-                    print("No se pudo conectar a la base de datos. Regresando al menú principal...")
-                    main()  # Regresar al menú principal si no se pudo conectar
-                else:
-                    gestionbd(cursor, conn)  # Llamar a gestionbd
-                    # Cerrar la conexión y el cursor después de usarlo
-                    cursor.close()
-                    conn.close()
-                    main()  # Volver al menú principal después de gestionar la base de datos
-            else:                
-                main()  # Regresar al menú principal si la autenticación falla   
-              
+            if acceso:
+                solicitar_datos_conexion()
+
         case 3:
             menu_lluvia()
             main()
