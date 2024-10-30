@@ -49,18 +49,21 @@ InstaTURNO--Grupo3--DS-IA/
 
 ### Descripcion archivos del repositorio:
 
-> #### **SQL**: _Este directorio contiene los archivos solicitados para crear la tabla de Turnero y poblar los datos.
+> #### **SQL**: _Este directorio contiene los archivos solicitados para crear la tabla de Turnero
+                 y poblar los datos.
 
 - **Turnero_Scripts_Creacion_Esquema_Tablas_Modificado.sql**
-    - Script para crear la base de datos Turnero con sus respectivas tablas teniendo en cuenta las correcciones mencionadas en la 
-      devolucion de la evidencia 2.
+    - Script para crear la base de datos Turnero con sus respectivas tablas teniendo en cuenta 
+      las correcciones mencionadas en la devolucion de la evidencia 2.
       
 - **Turnero_Scripts_Poblado_Tablas_Modificado.sql**
     - Script para poblar las tablas de datos tenendo en cuenta los cambios implementados.
  
-> #### **busquedaYordenamientos**: _Este directorio almacena los datos de busqueda y ordenamientos realizados en archivos txt.
+> #### **busquedaYordenamientos**: _Este directorio almacena los datos de busqueda y ordenamientos 
+                                    realizados en archivos txt.
 
-> #### **datosAnalizados**: _Este directorio almacena los graficos realizados en relación al registro pluvial en formato png y csv según especificación del usuario en la consulta.
+> #### **datosAnalizados**: _Este directorio almacena los graficos realizados en relación al registro 
+                             pluvial en formato png y csv según especificación del usuario en la consulta.
 
 - **Presentacion Proyecto Final.pdf**
     - Archivo pdf con la monografia solicitada paraa la presentación del Proyecto Final.
