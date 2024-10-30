@@ -66,38 +66,40 @@ InstaTURNO--Grupo3--DS-IA/
                              pluvial en formato png y csv según especificación del usuario en la consulta.
 
 - **Presentacion Proyecto Final.pdf**
-    - Archivo pdf con la monografia solicitada paraa la presentación del Proyecto Final.
+    - Archivo pdf con la monografia solicitada para la presentación del Proyecto Final.
 	
 
 - **accesos.ispc**
-    - 
+    - Archivo txt que guarda los accesos correctos de usuario al seleccionar la opción 2 de 
+      ingreso a la base de datos en el menu principal.
 	
 - **clases.py**
-    - 
+    - Archivo Python que contiene las definiciones de clases utilizadas en el proyecto.
 
 - **colores.py**
-    - 
+    - Archivo Python que define constantes de colores utilizados en los gráficos.
 	
 - **gestionAcceso.py**   
-    - 	
+    - Archivo Python encargado de la gestión de accesos y autenticación de usuarios en la aplicación.	
 	
 - **gestionDB.py**
-    - 
+    - Archivo Python que maneja las operaciones de la base de datos, como conexiones y consultas.
 	
 - **gestionPluvial.py**
-    - 
+    - Archivo Python que gestiona el registro y análisis de datos pluviales.
 	
 - **gestionUsuario.py**
-    - 
+    - Archivo Python que maneja las operaciones relacionadas con los usuarios, como la creación, actualización y eliminación.
 	
 - **logs.txt**
-    - 
+    - Archivo txt que registra los intentos fallidos de acceso al ingresar a la opcion 2 de base de datos 
+      dentro del menu principal.
 	
 - **main.py**
-    - 
+    - Archivo Python principal que inicia la ejecución del programa y gestiona el flujo de la aplicación.
 	
 - **usuarios.ispc**
-    - 
+    - Registra los usuarios creados.
 	
 
 
